@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+
+  <style>
+    *:root {
+      --soft-blue: hsl(215, 51%, 70%);
+      --Cyan: hsl(178, 100%, 50%);
+
+      --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+      --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+      --Very-dark-blue-line: hsl(215, 32%, 27%);
+      --White: hsl(0, 0%, 100%);
+    }
+
+    * {
+      padding: 0;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      font-size: 15px;
+      background-color: var(--Very-dark-blue-main-BG);
+    }
+
+    .wrapper {
+      width: 320px;
+      margin-top: 140px;
+      padding: 1rem;
+      background-color: var(--Very-dark-blue-card-BG);
+      border-radius: 1rem;
+      margin-bottom: 5rem;
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .main-image:hover {
+      opacity: 0.5;
+
+    }
+
+    .col:hover {
+      background-color: var(--Cyan);
+      transition: ease-in 2s;
+      opacity: 0.5;
+      border-radius: 0.5rem;
+      height: 288px;
+
+
+    }
+
+    .color:hover {
+      background-image: url(./images/icon-view.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 0.5rem;
+    }
+
+    .hero h1 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      font-weight: 900;
+    }
+
+    .hero h1:hover {
+      color: var(--Cyan);
+      cursor: pointer;
+    }
+
+    .hero p {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      color: var(--soft-blue);
+      font-size: 18px;
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      margin-top: 1.5rem;
+
+
+    }
+
+    #one-icon {
+      margin-right: 7rem;
+
+      color: var(--Cyan);
+
+    }
+
+    #one-icon p {
+      margin-left: 0.5rem;
+    }
+
+    #two-icon p {
+      margin-left: 0.1rem;
+    }
+
+    #two-icon {
+      color: var(--soft-blue);
+
+    }
+
+    .icon {
+      width: 15%;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid var(--soft-blue);
+      padding-bottom: 2rem;
+    }
+
+
+
+    .avatar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+    }
+
+    #profile {
+      width: 10%;
+      border: 1px solid white;
+      margin: 0;
+      margin-right: 1rem;
+      margin-top: 1rem;
+
+    }
+
+    .avatar p {
+      margin: 0;
+      margin-top: 1rem;
+      color: var(--soft-blue);
+    }
+
+    span:hover {
+      color: var(--Cyan);
+      cursor: pointer;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <!--The start of the Container-->
+  <main class="wrapper">
+    <!--The start of the hero section-->
+    <section class="hero">
+
+
+      <div class="color">
+        <div class="col">
+
+          <img class="main-image" src="./images/image-equilibrium.jpg">
+        </div>
+      </div>
+      <h1>Equilibrium #3429</h1>
+      <p class="para">Our Equilibrium collection promotes balance and calm.</p>
+    </section>
+    <!--The End Of The Hero Section-->
+
+    <!--The Start Of The Icons Section-->
+    <section class="icons">
+      <li id="one-icon">
+        <img class="icon" src="./images/icon-ethereum.svg">
+
+        <p> 0.041ETH </p>
+
+      </li>
+      <li id="two-icon">
+        <img class="icon" src="./images/icon-clock.svg">
+        <p> 3 days left </p>
+
+      </li>
+
+    </section>
+    <!--The End Of The Icons Section-->
+
+    <!--The End Of The Avatar Section-->
+    <section class="avatar">
+      <img id="profile" src="./images/image-avatar.png">
+      <p>Creation of<span> Jules Wyvern</span></p>
+
+    </section>
+    <!--The End Of The Avatar Section-->
+
+  </main>
+  <!--The End Of The Container-->
+
+
+
+
+  <!--The Start Of The Footer-->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/00awaudby">Ashley Waudby</a>.
+  </footer>
+  <!--The End Of The Footer-->
+</body>
+
+</html>
