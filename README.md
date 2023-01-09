@@ -47,8 +47,9 @@ I feel i need to keep working on some aspects of responsive wed development and 
 The facebook Group that i run for beginner web developers where a big help with pointers and feedback.
 
 ### Author
+Ashley Waudby
 Website - https://www.frontendmentor.io/profile/00awaudby
-Frontend Mentor - @00awaudby
+
 
 
 
