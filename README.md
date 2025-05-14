@@ -28,7 +28,7 @@ See hover states for interactive elements
 ### Links
 Solution URL: https://www.frontendmentor.io/solutions/responsive-ntf-card-with-flexbox-9PYyPHE5c
 
-Live Site URL: https://00awaudby.github.io/ntf-card.github.io/
+Live Site URL: https://ashleywaudbydev.github.io/ntf-card.github.io/
 
 ### My process
 - Built with
